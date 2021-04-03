@@ -12,6 +12,8 @@
     <script src="./JS/P5.js"></script>
     <script src="./JS/P6.js"></script>
     <script src="./JS/P7.js"></script>
+    <script src="./JS/P8.js"></script>
+    <script src="./JS/P9.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -157,6 +159,46 @@
                 <div>
                     <input type="button" value="Calcular" onclick="calNumeros()">
                     <input type="button" value="Limpiar" onclick="borrar7()">
+                </div>
+            </form>
+        </section>
+        <sectionid id = "P8">
+            <form method="POST" name="problema8" class="problema8">
+                <div><h2>Problema 8</h2></div>
+                <div>
+                    <label>Ingrese el primer numero: </label>
+                    <input type="text" name="num1" onkeypress="return validarC(event)">
+                    <label>Ingrese el segundo numero: </label>
+                    <input type="text" name="num2" onkeypress="return validarC(event)">
+                    <label>Ingrese el tercer numero: </label>
+                    <input type="text" name="num3" onkeypress="return validarC(event)">
+                </div>
+                <div>
+                    <label>Numero mayor de los 3:</label>
+                    <input type="text" name="respuesta8" readonly>
+                </div>
+                <div>
+                    <input type="button" value="Calcular" onclick="calMayor()">
+                    <input type="button" value="Limpiar" onclick="borrar8()">
+                </div>
+            </form>
+        </section>
+        <sectionid id = "P9">
+            <form method="POST" name="problema9" class="problema9">
+                <div><h2>Problema 9</h2></div>
+                <div>
+                    <label>Ingrese la cantidad de horas trabajadas: </label>
+                    <input type="text" name="horas" onkeypress="return validarC(event)">
+                    <label>Ingrese el costo de hora: </label>
+                    <input type="text" name="costoHora" onkeypress="return validarC(event)">
+                </div>
+                <div>
+                    <label>Sueldo:</label>
+                    <input type="text" name="respuesta9" readonly>
+                </div>
+                <div>
+                    <input type="button" value="Calcular" onclick="calHoras()">
+                    <input type="button" value="Limpiar" onclick="borrar9()">
                 </div>
             </form>
         </section>

@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="masterstyle.css">
     <script src="./JS/P1.js"></script>
     <script src="./JS/P2.js"></script>
+    <script src="./JS/P3.js"></script>
+    <script src="./JS/P4.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -52,6 +54,47 @@
                 <div>
                     <input type="button" value="Calcular" onclick="calSueldo()">
                     <input type="button" value="Limpiar" onclick="borrar2()">
+                </div>
+            </form>
+        </section>
+        <section id = "P3">
+            <form method="POST" name="problema3" class="problema3">
+                <div><h2>Problema 3</h2></div>
+                <div>
+                    <label>Total de la compra: </label>
+                    <input type="text" name="compra" onkeypress="return validarC(event)">
+                </div>
+                <div>
+                    <label>Total a pagar con descuento:</label>
+                    <input type="text" name="compraFinal" readonly>
+                <div>
+                    <input type="button" value="Calcular" onclick="calCompra()">
+                    <input type="button" value="Limpiar" onclick="borrar3()">
+                </div>        
+            </form>
+        </section>
+        <section id = "P4">
+            <form method="POST" name="problema4" class="problema4">
+                <div><h2>Problema 4</h2></div>
+                <div>
+                    <label>parcial 1: </label>
+                    <input type="text" name="par1" onkeypress="return validarC(event)">
+                    <label>parcial 2: </label>
+                    <input type="text" name="par2" onkeypress="return validarC(event)">
+                    <label>parcial 3: </label>
+                    <input type="text" name="par3" onkeypress="return validarC(event)">
+                    <label>Examen : </label>
+                    <input type="text" name="examen" onkeypress="return validarC(event)">
+                    <label>Trabajo final: </label>
+                    <input type="text" name="trabajoFinal" onkeypress="return validarC(event)">
+                </div>
+                <div>
+                    <label>Calificacion Final:</label>
+                    <input type="text" name="calificacion" readonly>
+                </div>
+                <div>
+                    <input type="button" value="Calcular" onclick="calCalificacion()">
+                    <input type="button" value="Limpiar" onclick="borrar4()">
                 </div>
             </form>
         </section>

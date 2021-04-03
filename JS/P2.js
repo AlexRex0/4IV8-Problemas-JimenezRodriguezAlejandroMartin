@@ -1,5 +1,5 @@
 function calSueldo(){
-    var patron = /[0-9]+[.]?[0-9]/;
+    var patron = /[0-9]+[.]?[0-9]*/;
     let v1 = document.problema2.V1.value;
     let v2 = document.problema2.V2.value;
     let v3 = document.problema2.V3.value;

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="masterstyle.css">
+    <script src="./P1.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section id = "P1">
+            <form method="POST" name="problema1" class="problema1">
+                <div><h2>Problema 1</h2></div>
+                <div>
+                    <label>Capital: </label>
+                    <input type="text" name="cap" onkeypress="return validarC(event)">
+                </div>
+                <div>
+                    <label>Dinero + interes mensual:</label>
+                    <input type="text" name="resCap" readonly>
+                <div>
+                    <input type="button" value="Calcular" onclick="interes()">
+                    <input type="button" value="Limpiar" onclick="borrar()">
+                </div>        
+            </form>
+        </section>
+    </main>
+</body>
+</html>

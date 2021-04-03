@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="masterstyle.css">
-    <script src="./P1.js"></script>
+    <script src="./JS/P1.js"></script>
+    <script src="./JS/P2.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -27,6 +28,31 @@
                     <input type="button" value="Calcular" onclick="interes()">
                     <input type="button" value="Limpiar" onclick="borrar()">
                 </div>        
+            </form>
+        </section>
+        <section id = "P2">
+            <form method="POST" name="problema2" class="problema2">
+                <div><h2>Problema 2</h2></div>
+                <div>
+                    <label>Sueldo: </label>
+                    <input type="text" name="sueldo" onkeypress="return validarC(event)">
+                </div>
+                <div>
+                    <label>Venta1: </label>
+                    <input type="text" name="V1" onkeypress="return validarC(event)">
+                    <label>Venta2: </label>
+                    <input type="text" name="V2" onkeypress="return validarC(event)">
+                    <label>Venta3: </label>
+                    <input type="text" name="V3" onkeypress="return validarC(event)">
+                </div>
+                <div>
+                    <label>Sueldo Final:</label>
+                    <input type="text" name="sueldoFinal" readonly>
+                </div>
+                <div>
+                    <input type="button" value="Calcular" onclick="calSueldo()">
+                    <input type="button" value="Limpiar" onclick="borrar2()">
+                </div>
             </form>
         </section>
     </main>

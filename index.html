@@ -9,6 +9,9 @@
     <script src="./JS/P2.js"></script>
     <script src="./JS/P3.js"></script>
     <script src="./JS/P4.js"></script>
+    <script src="./JS/P5.js"></script>
+    <script src="./JS/P6.js"></script>
+    <script src="./JS/P7.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -95,6 +98,65 @@
                 <div>
                     <input type="button" value="Calcular" onclick="calCalificacion()">
                     <input type="button" value="Limpiar" onclick="borrar4()">
+                </div>
+            </form>
+        </section>
+        <sectionid id = "P5">
+            <form method="POST" name="problema5" class="problema5">
+                <div><h2>Problema 5</h2></div>
+                <div>
+                    <label>Cantidad de hombres: </label>
+                    <input type="text" name="hombres" onkeypress="return validarC(event)">
+                    <label>Cantidad de mujeres: </label>
+                    <input type="text" name="mujeres" onkeypress="return validarC(event)">
+                </div>
+                <div>
+                    <label>Porcentaje hombres:</label>
+                    <input type="text" name="Phombres" readonly>
+                    <label>Porcentaje muejeres:</label>
+                    <input type="text" name="Pmujeres" readonly>
+                </div>
+                <div>
+                    <input type="button" value="Calcular" onclick="calPorcentaje()">
+                    <input type="button" value="Limpiar" onclick="borrar5()">
+                </div>
+            </form>
+        </section>
+        <sectionid id = "P6">
+            <form method="POST" name="problema6" class="problema6">
+                <div><h2>Problema 6</h2></div>
+                <div>
+                    <label>Año de nacimiento: </label>
+                    <input type="text" name="nacimiento" onkeypress="return validarC(event)">
+                    <label>Año actual: </label>
+                    <input type="text" name="actual" onkeypress="return validarC(event)">
+                </div>
+                <div>
+                    <label>Edad:</label>
+                    <input type="text" name="edad" readonly>
+                </div>
+                <div>
+                    <input type="button" value="Calcular" onclick="calEdad()">
+                    <input type="button" value="Limpiar" onclick="borrar6()">
+                </div>
+            </form>
+        </section>
+        <sectionid id = "P7">
+            <form method="POST" name="problema7" class="problema7">
+                <div><h2>Problema 7</h2></div>
+                <div>
+                    <label>Ingrese el primer numero: </label>
+                    <input type="text" name="numero1" onkeypress="return validarC(event)">
+                    <label>Ingrese el segundo numero: </label>
+                    <input type="text" name="numero2" onkeypress="return validarC(event)">
+                </div>
+                <div>
+                    <label>Resultado:</label>
+                    <input type="text" name="respuesta7" readonly>
+                </div>
+                <div>
+                    <input type="button" value="Calcular" onclick="calNumeros()">
+                    <input type="button" value="Limpiar" onclick="borrar7()">
                 </div>
             </form>
         </section>

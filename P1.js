@@ -12,7 +12,7 @@ function interes(){
 
     var patron = /[0-9]+[.]?[0-9]*/
     let aux = document.problema1.cap.value;
-    if(aux == " " || !(patron.test(aux))){
+    if(aux == " " || !patron.test(aux)){
         alert("ingrese un valor en Capital");
     }else{
         let res = parseFloat(aux);

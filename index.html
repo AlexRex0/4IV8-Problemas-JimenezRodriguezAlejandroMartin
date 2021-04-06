@@ -14,6 +14,7 @@
     <script src="./JS/P7.js"></script>
     <script src="./JS/P8.js"></script>
     <script src="./JS/P9.js"></script>
+    <script src="./JS/P10.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -199,6 +200,25 @@
                 <div>
                     <input type="button" value="Calcular" onclick="calHoras()">
                     <input type="button" value="Limpiar" onclick="borrar9()">
+                </div>
+            </form>
+        </section>
+        <sectionid id = "P10">
+            <form method="POST" name="problema10" class="problema10">
+                <div><h2>Problema 10</h2></div>
+                <div>
+                    <label>Ingrese su salario mensual $: </label>
+                    <input type="text" name="salarioM" onkeypress="return validarC(event)">
+                    <label>Ingrese los años que lleva en la empresa: </label>
+                    <input type="text" name="antiguedad" onkeypress="return validarC(event)">
+                </div>
+                <div>
+                    <label>Utilidad:</label>
+                    <input type="text" name="respuesta10" readonly>
+                </div>
+                <div>
+                    <input type="button" value="Calcular" onclick="calUtilidad()">
+                    <input type="button" value="Limpiar" onclick="borrar10()">
                 </div>
             </form>
         </section>

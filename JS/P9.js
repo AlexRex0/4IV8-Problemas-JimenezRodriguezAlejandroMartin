@@ -28,9 +28,6 @@ function calHoras(){
             triple = horasTotal - 40 - 8;
         }
         horasTotal = horasTotal - doble - triple;
-        alert(horasTotal);
-        alert(doble);
-        alert(triple);
         res = (horasTotal * c) + (doble * (c * 2)) + (triple * (c * 3));
         document.problema9.respuesta9.value ="$ " + res;
     }
